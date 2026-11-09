@@ -1,0 +1,17 @@
+test_ai_full_text_evidence_and_persistent_history (tests.test_workflows.Workflows.test_ai_full_text_evidence_and_persistent_history) ... ok
+test_empty_insufficient_evidence_is_readable (tests.test_workflows.Workflows.test_empty_insufficient_evidence_is_readable) ... ok
+test_fake_evidence_reference_is_rejected_and_not_saved (tests.test_workflows.Workflows.test_fake_evidence_reference_is_rejected_and_not_saved) ... ok
+test_metadata_only_cannot_use_ai_and_key_is_required (tests.test_workflows.Workflows.test_metadata_only_cannot_use_ai_and_key_is_required) ... ok
+test_metadata_pages_and_duplicate_upload (tests.test_workflows.Workflows.test_metadata_pages_and_duplicate_upload) ... ok
+test_missing_evidence_can_be_acknowledged (tests.test_workflows.Workflows.test_missing_evidence_can_be_acknowledged) ... ok
+test_original_database_migration_preserves_papers (tests.test_workflows.Workflows.test_original_database_migration_preserves_papers) ... ok
+test_reject_invalid_blank_and_oversize_pdf (tests.test_workflows.Workflows.test_reject_invalid_blank_and_oversize_pdf) ... EOF marker not found
+ok
+test_replacing_pdf_clears_stale_ai_history (tests.test_workflows.Workflows.test_replacing_pdf_clears_stale_ai_history) ... ok
+test_search_save_deduplicates_and_metadata_edit (tests.test_workflows.Workflows.test_search_save_deduplicates_and_metadata_edit) ... ok
+test_title_typography_and_arxiv_metadata_enrichment (tests.test_workflows.Workflows.test_title_typography_and_arxiv_metadata_enrichment) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.521s
+
+OK

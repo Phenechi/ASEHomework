@@ -1,0 +1,77 @@
+{
+  "stage": "round1",
+  "recorded_at_utc": "2026-11-07T02:15:09.257529+00:00",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "modules": [
+    "tests.test_workflows",
+    "tests.hw2.test_initial",
+    "tests.hw2.test_round1"
+  ],
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "run",
+        "--rcfile=.coveragerc",
+        "-m",
+        "scripts.evaluate_tests",
+        "--worker",
+        "--stage",
+        "round1",
+        "--output",
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\docs\\hw2\\evidence\\round1"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "report"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "json",
+        "-o",
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\docs\\hw2\\evidence\\round1\\coverage.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "html",
+        "-d",
+        "C:\\Users\\Matthew\\Desktop\\ASE HW1\\docs\\hw2\\evidence\\round1\\html"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "sha256": {
+    ".coveragerc": "5615109489961c76385c5462bfde92412a8d8089450af9cc285dc586da764345",
+    "app/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "app/database.py": "02ca27bcba9c42c43716c417a45babe91ab6e93084825e8b7d98e6c074d34e08",
+    "app/llm.py": "3a9e76a82a9db09d65e4f8bf9555cadf3e69da222cc5ab0a4c91fded881226a9",
+    "app/main.py": "64b69289e2dee26e877f14f3084d1610ab47023c56e439871c596194aac65bd6",
+    "app/papers.py": "80b24017bbba498afb85f12419e909627d1abe82298ec0feb4ef74aa983b47c3",
+    "requirements-dev.txt": "1922ef70bd8a7046a20060056a73647b4ca1052dac7d74afacaeda24b75bbab0",
+    "requirements.txt": "489195db328b01de43aaf5816b67ac2495c1840e80cec0c68b273468696c8c50",
+    "scripts/evaluate_tests.py": "13635d94430460f50c221b8b30313358d3522c7a14308d65dfe8e35e926c0e2d",
+    "tests/__init__.py": "a0c6ca7090288463b8c41aadde767293049fdba1c119f5d1876155ff1e77eb6e",
+    "tests/hw2/__init__.py": "777170675cec37829dbaa72a3a4db37d32f6cd0f5542e39953f1ad13db3055cb",
+    "tests/hw2/support.py": "a88b98384290a325cad18b3a5e72997ccc17af65c53bba6d41992ebd2274fc57",
+    "tests/hw2/test_initial.py": "9e9c54e2a8c990879ff61fbd2334bb951ca930a182df24586e0741fc5eaeac1b",
+    "tests/hw2/test_round1.py": "9adbbfdd62bf9109ed451c59ed42c34e663ce0e02bdb060ae7b084d789ae58c5",
+    "tests/test_workflows.py": "8fa54b5d7c8ef1cb7242d12f024c56270afb7fdf0b8d9d07886e920fa7f79650"
+  }
+}

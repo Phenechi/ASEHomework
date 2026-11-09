@@ -1,0 +1,30 @@
+test_ai_full_text_evidence_and_persistent_history (tests.test_workflows.Workflows.test_ai_full_text_evidence_and_persistent_history) ... ok
+test_empty_insufficient_evidence_is_readable (tests.test_workflows.Workflows.test_empty_insufficient_evidence_is_readable) ... ok
+test_fake_evidence_reference_is_rejected_and_not_saved (tests.test_workflows.Workflows.test_fake_evidence_reference_is_rejected_and_not_saved) ... ok
+test_metadata_only_cannot_use_ai_and_key_is_required (tests.test_workflows.Workflows.test_metadata_only_cannot_use_ai_and_key_is_required) ... ok
+test_metadata_pages_and_duplicate_upload (tests.test_workflows.Workflows.test_metadata_pages_and_duplicate_upload) ... ok
+test_missing_evidence_can_be_acknowledged (tests.test_workflows.Workflows.test_missing_evidence_can_be_acknowledged) ... ok
+test_original_database_migration_preserves_papers (tests.test_workflows.Workflows.test_original_database_migration_preserves_papers) ... ok
+test_reject_invalid_blank_and_oversize_pdf (tests.test_workflows.Workflows.test_reject_invalid_blank_and_oversize_pdf) ... EOF marker not found
+ok
+test_replacing_pdf_clears_stale_ai_history (tests.test_workflows.Workflows.test_replacing_pdf_clears_stale_ai_history) ... ok
+test_search_save_deduplicates_and_metadata_edit (tests.test_workflows.Workflows.test_search_save_deduplicates_and_metadata_edit) ... ok
+test_title_typography_and_arxiv_metadata_enrichment (tests.test_workflows.Workflows.test_title_typography_and_arxiv_metadata_enrichment) ... ok
+test_create_list_and_detail_preserve_literal_metadata (tests.hw2.test_initial.InitialAPI.test_create_list_and_detail_preserve_literal_metadata) ... ok
+test_duplicate_attachment_conflict_preserves_both_records (tests.hw2.test_initial.InitialAPI.test_duplicate_attachment_conflict_preserves_both_records) ... ok
+test_edit_metadata_preserves_pdf_pages_and_bytes (tests.hw2.test_initial.InitialAPI.test_edit_metadata_preserves_pdf_pages_and_bytes) ... ok
+test_empty_library_and_health (tests.hw2.test_initial.InitialAPI.test_empty_library_and_health) ... ok
+test_fetch_requires_source_and_reuses_attached_pdf (tests.hw2.test_initial.InitialAPI.test_fetch_requires_source_and_reuses_attached_pdf) ... ok
+test_invalid_metadata_does_not_create_records (tests.hw2.test_initial.InitialAPI.test_invalid_metadata_does_not_create_records) ... ok
+test_invalid_search_and_upstream_failure_are_readable (tests.hw2.test_initial.InitialAPI.test_invalid_search_and_upstream_failure_are_readable) ... ok
+test_missing_paper_routes_return_readable_404 (tests.hw2.test_initial.InitialAPI.test_missing_paper_routes_return_readable_404) ... ok
+test_question_validation_never_saves_history (tests.hw2.test_initial.InitialAPI.test_question_validation_never_saves_history) ... ok
+test_save_missing_search_result_leaves_library_empty (tests.hw2.test_initial.InitialAPI.test_save_missing_search_result_leaves_library_empty) ... ok
+test_search_normalizes_topic_and_returns_metadata (tests.hw2.test_initial.InitialAPI.test_search_normalizes_topic_and_returns_metadata) ... ok
+test_summary_copies_evidence_and_persists_analysis_kind (tests.hw2.test_initial.InitialAPI.test_summary_copies_evidence_and_persists_analysis_kind) ... ok
+test_passages_preserve_all_characters_and_physical_page_numbers (tests.hw2.test_initial.InitialPassages.test_passages_preserve_all_characters_and_physical_page_numbers) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.970s
+
+OK

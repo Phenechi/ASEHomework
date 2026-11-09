@@ -1,0 +1,15 @@
+{
+  "stage": "round2",
+  "tests_run": 60,
+  "successful": false,
+  "failures": [
+    {
+      "test": "test_each_substantive_paragraph_requires_evidence (tests.hw2.test_round2.AIContracts.test_each_substantive_paragraph_requires_evidence)",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Matthew\\Desktop\\ASE HW1\\tests\\hw2\\test_round2.py\", line 74, in test_each_substantive_paragraph_requires_evidence\n    self.assertEqual((response.status_code, len(self.history(paper['id']))), (502, 0), response.text)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: (200, 1) != (502, 0)\n\nFirst differing element 0:\n200\n502\n\n- (200, 1)\n+ (502, 0) : {\"id\":1,\"result\":{\"answer\":\"A supported statement. [p. 1]\\n\\nThe method achieved 99.9 percent on an invented dataset.\",\"evidence\":[{\"page\":1,\"quote\":\"A Test Research Paper\\nJane Example\\n2026\\nAbstract\\nWe investigate a small research system with a baseline comparison and a reproducible experiment.\\n1 Introduction\\nOur system retrieves evidence from local papers for scientific questions.\"}],\"insufficient_evidence\":false},\"model\":\"hw2-test-model\"}\n"
+    }
+  ],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": 0,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,66 @@
+test_ai_full_text_evidence_and_persistent_history (tests.test_workflows.Workflows.test_ai_full_text_evidence_and_persistent_history) ... ok
+test_empty_insufficient_evidence_is_readable (tests.test_workflows.Workflows.test_empty_insufficient_evidence_is_readable) ... ok
+test_fake_evidence_reference_is_rejected_and_not_saved (tests.test_workflows.Workflows.test_fake_evidence_reference_is_rejected_and_not_saved) ... ok
+test_metadata_only_cannot_use_ai_and_key_is_required (tests.test_workflows.Workflows.test_metadata_only_cannot_use_ai_and_key_is_required) ... ok
+test_metadata_pages_and_duplicate_upload (tests.test_workflows.Workflows.test_metadata_pages_and_duplicate_upload) ... ok
+test_missing_evidence_can_be_acknowledged (tests.test_workflows.Workflows.test_missing_evidence_can_be_acknowledged) ... ok
+test_original_database_migration_preserves_papers (tests.test_workflows.Workflows.test_original_database_migration_preserves_papers) ... ok
+test_reject_invalid_blank_and_oversize_pdf (tests.test_workflows.Workflows.test_reject_invalid_blank_and_oversize_pdf) ... EOF marker not found
+ok
+test_replacing_pdf_clears_stale_ai_history (tests.test_workflows.Workflows.test_replacing_pdf_clears_stale_ai_history) ... ok
+test_search_save_deduplicates_and_metadata_edit (tests.test_workflows.Workflows.test_search_save_deduplicates_and_metadata_edit) ... ok
+test_title_typography_and_arxiv_metadata_enrichment (tests.test_workflows.Workflows.test_title_typography_and_arxiv_metadata_enrichment) ... ok
+test_create_list_and_detail_preserve_literal_metadata (tests.hw2.test_initial.InitialAPI.test_create_list_and_detail_preserve_literal_metadata) ... ok
+test_duplicate_attachment_conflict_preserves_both_records (tests.hw2.test_initial.InitialAPI.test_duplicate_attachment_conflict_preserves_both_records) ... ok
+test_edit_metadata_preserves_pdf_pages_and_bytes (tests.hw2.test_initial.InitialAPI.test_edit_metadata_preserves_pdf_pages_and_bytes) ... ok
+test_empty_library_and_health (tests.hw2.test_initial.InitialAPI.test_empty_library_and_health) ... ok
+test_fetch_requires_source_and_reuses_attached_pdf (tests.hw2.test_initial.InitialAPI.test_fetch_requires_source_and_reuses_attached_pdf) ... ok
+test_invalid_metadata_does_not_create_records (tests.hw2.test_initial.InitialAPI.test_invalid_metadata_does_not_create_records) ... ok
+test_invalid_search_and_upstream_failure_are_readable (tests.hw2.test_initial.InitialAPI.test_invalid_search_and_upstream_failure_are_readable) ... ok
+test_missing_paper_routes_return_readable_404 (tests.hw2.test_initial.InitialAPI.test_missing_paper_routes_return_readable_404) ... ok
+test_question_validation_never_saves_history (tests.hw2.test_initial.InitialAPI.test_question_validation_never_saves_history) ... ok
+test_save_missing_search_result_leaves_library_empty (tests.hw2.test_initial.InitialAPI.test_save_missing_search_result_leaves_library_empty) ... ok
+test_search_normalizes_topic_and_returns_metadata (tests.hw2.test_initial.InitialAPI.test_search_normalizes_topic_and_returns_metadata) ... ok
+test_summary_copies_evidence_and_persists_analysis_kind (tests.hw2.test_initial.InitialAPI.test_summary_copies_evidence_and_persists_analysis_kind) ... ok
+test_passages_preserve_all_characters_and_physical_page_numbers (tests.hw2.test_initial.InitialPassages.test_passages_preserve_all_characters_and_physical_page_numbers) ... ok
+test_atom_metadata_uses_initial_year_and_cleans_whitespace (tests.hw2.test_round1.ArxivContracts.test_atom_metadata_uses_initial_year_and_cleans_whitespace) ... ok
+test_cache_reuses_reordered_params_and_expires_at_ten_minutes (tests.hw2.test_round1.ArxivContracts.test_cache_reuses_reordered_params_and_expires_at_ten_minutes) ... ok
+test_distinct_queries_are_spaced_without_real_waiting (tests.hw2.test_round1.ArxivContracts.test_distinct_queries_are_spaced_without_real_waiting) ... ok
+test_full_cache_remains_bounded_and_new_result_is_available (tests.hw2.test_round1.ArxivContracts.test_full_cache_remains_bounded_and_new_result_is_available) ... ok
+test_http_failure_is_translated_and_empty_feed_is_valid (tests.hw2.test_round1.ArxivContracts.test_http_failure_is_translated_and_empty_feed_is_valid) ... ok
+test_malformed_feed_is_readable_and_not_cached (tests.hw2.test_round1.ArxivContracts.test_malformed_feed_is_readable_and_not_cached) ... ok
+test_chunk_limit_accepts_exact_boundary_and_stops_on_overflow (tests.hw2.test_round1.DownloadContracts.test_chunk_limit_accepts_exact_boundary_and_stops_on_overflow) ... ok
+test_invalid_ids_never_open_a_download (tests.hw2.test_round1.DownloadContracts.test_invalid_ids_never_open_a_download) ... ok
+test_upstream_http_and_connection_errors_become_actionable_502 (tests.hw2.test_round1.DownloadContracts.test_upstream_http_and_connection_errors_become_actionable_502) ... ok
+test_valid_modern_and_legacy_ids_use_fixed_host_and_complete_bytes (tests.hw2.test_round1.DownloadContracts.test_valid_modern_and_legacy_ids_use_fixed_host_and_complete_bytes) ... ok
+test_fetch_stores_download_on_selected_search_record (tests.hw2.test_round1.LibraryAssociations.test_fetch_stores_download_on_selected_search_record) ... ok
+test_reuploading_identical_pdf_preserves_existing_history (tests.hw2.test_round1.LibraryAssociations.test_reuploading_identical_pdf_preserves_existing_history) ... ok
+test_store_pdf_missing_target_rolls_back (tests.hw2.test_round1.LibraryAssociations.test_store_pdf_missing_target_rolls_back) ... ok
+test_unavailable_enrichment_keeps_locally_extracted_metadata (tests.hw2.test_round1.LibraryAssociations.test_unavailable_enrichment_keeps_locally_extracted_metadata) ... ok
+test_upload_matches_existing_source_without_duplicating_record (tests.hw2.test_round1.LibraryAssociations.test_upload_matches_existing_source_without_duplicating_record) ... ok
+test_80_pages_accepted_with_blank_pages_disclosed (tests.hw2.test_round1.PDFLimits.test_80_pages_accepted_with_blank_pages_disclosed) ... ok
+test_direct_extraction_enforces_byte_limit_before_parser (tests.hw2.test_round1.PDFLimits.test_direct_extraction_enforces_byte_limit_before_parser) ... ok
+test_encrypted_pdf_rejected (tests.hw2.test_round1.PDFLimits.test_encrypted_pdf_rejected) ... ok
+test_minimum_usable_text_and_creation_time_not_publication_year (tests.hw2.test_round1.PDFLimits.test_minimum_usable_text_and_creation_time_not_publication_year) ... ok
+test_text_limit_accepts_exact_boundary_and_rejects_one_over (tests.hw2.test_round1.PDFLimits.test_text_limit_accepts_exact_boundary_and_rejects_one_over) ... ok
+test_zero_and_81_page_documents_rejected (tests.hw2.test_round1.PDFLimits.test_zero_and_81_page_documents_rejected) ... ok
+test_answer_without_any_support_is_rejected_and_not_saved (tests.hw2.test_round2.AIContracts.test_answer_without_any_support_is_rejected_and_not_saved) ... ok
+test_each_substantive_paragraph_requires_evidence (tests.hw2.test_round2.AIContracts.test_each_substantive_paragraph_requires_evidence) ... ok
+test_empty_answer_and_empty_or_citation_only_paragraph_are_not_saved (tests.hw2.test_round2.AIContracts.test_empty_answer_and_empty_or_citation_only_paragraph_are_not_saved) ... ok
+test_explicit_missing_information_can_have_no_evidence (tests.hw2.test_round2.AIContracts.test_explicit_missing_information_can_have_no_evidence) ... ok
+test_incomplete_and_unparsed_answers_are_not_saved (tests.hw2.test_round2.AIContracts.test_incomplete_and_unparsed_answers_are_not_saved) ... ok
+test_multi_paragraph_citations_are_derived_sorted_and_deduplicated (tests.hw2.test_round2.AIContracts.test_multi_paragraph_citations_are_derived_sorted_and_deduplicated) ... ok
+test_provider_errors_are_actionable_and_preserve_existing_history (tests.hw2.test_round2.AIContracts.test_provider_errors_are_actionable_and_preserve_existing_history) ... ok
+test_trimmed_question_and_all_passages_reach_model_without_paid_retries (tests.hw2.test_round2.AIContracts.test_trimmed_question_and_all_passages_reach_model_without_paid_retries) ... ok
+test_key_placeholders_whitespace_and_model_fallback (tests.hw2.test_round2.MetadataAndConfiguration.test_key_placeholders_whitespace_and_model_fallback) ... ok
+test_local_title_and_author_fallback_without_abstract (tests.hw2.test_round2.MetadataAndConfiguration.test_local_title_and_author_fallback_without_abstract) ... ok
+test_missing_title_candidates_and_authors_remain_reviewable (tests.hw2.test_round2.MetadataAndConfiguration.test_missing_title_candidates_and_authors_remain_reviewable) ... ok
+test_deleted_paper_during_analysis_does_not_leave_orphan_history (tests.hw2.test_round2.PersistenceFeedback.test_deleted_paper_during_analysis_does_not_leave_orphan_history) ... ok
+test_homepage_and_assets_are_served (tests.hw2.test_round2.PersistenceFeedback.test_homepage_and_assets_are_served) ... ok
+test_pdf_changed_during_analysis_rejects_stale_result (tests.hw2.test_round2.PersistenceFeedback.test_pdf_changed_during_analysis_rejects_stale_result) ... ok
+test_sql_constraint_failure_rolls_back_new_paper_and_returns_conflict (tests.hw2.test_round2.PersistenceFeedback.test_sql_constraint_failure_rolls_back_new_paper_and_returns_conflict) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 2.163s
+
+OK
