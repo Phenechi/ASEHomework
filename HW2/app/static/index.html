@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Research Assistant</title><link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/styles.css?v=2"><script src="/static/app.js?v=2" defer></script>
+</head>
+<body><main>
+  <header><p class="eyebrow">YOUR RESEARCH WORKSPACE</p><h1>AI Research Assistant</h1>
+    <p>Find a paper. Read the evidence. Ask better questions.</p><span id="health" role="status">Connecting…</span>
+  </header>
+  <nav aria-label="Workspace"><button id="nav-search" class="tab active" type="button">Discover</button><button id="nav-library" class="tab" type="button">My library</button></nav>
+  <p id="message" role="status" aria-live="polite"></p>
+  <div id="discover">
+    <div class="layout">
+      <section><h2>Search research papers</h2><p class="muted">Search arXiv by topic or keywords. No search API key needed.</p>
+        <form id="search-form"><label for="query">Research topic</label><div class="inline"><input id="query" required minlength="2" maxlength="200" placeholder="e.g. attention is all you need"><button type="submit">Search</button></div></form>
+      </section>
+      <section><h2>Upload a paper</h2><p class="muted">Add a text-based PDF. We extract its metadata and page text for you to review.</p>
+        <form id="upload-form"><label for="upload-file">PDF file (up to 20 MB, 80 pages)</label><input id="upload-file" type="file" accept="application/pdf,.pdf" required><button type="submit">Upload PDF</button></form>
+      </section>
+    </div>
+    <section class="results-section"><h2>Search results</h2><p id="search-status" class="muted" role="status">Start with a topic to discover papers.</p><div id="results"></div></section>
+    <details class="manual"><summary>Add paper details manually</summary><section><form id="paper-form">
+      <label for="title">Title (required)</label><input id="title" name="title" required maxlength="500">
+      <label for="authors">Authors</label><input id="authors" name="authors" maxlength="2000">
+      <label for="year">Publication year</label><input id="year" name="year" type="number" min="1000" max="2100">
+      <label for="abstract">Abstract</label><textarea id="abstract" name="abstract" rows="3" maxlength="20000"></textarea>
+      <button type="submit">Save to library</button></form></section></details>
+  </div>
+  <div id="library" hidden><div class="workspace">
+    <section class="library-list"><div class="section-top"><h2>Your library</h2><button id="refresh" class="secondary" type="button">Refresh</button></div><p id="count" class="muted"></p><div id="papers"></div></section>
+    <section id="reader"><div id="reader-empty"><h2>Select a paper</h2><p>Choose a saved paper to read its text, generate a summary, or ask a question.</p></div>
+      <div id="paper-detail" hidden>
+        <p class="eyebrow" id="paper-source"></p><h2 id="paper-title"></h2><p id="paper-meta" class="muted"></p><p id="paper-abstract"></p>
+        <div id="paper-links" class="actions"></div><p id="content-status" class="notice"></p>
+        <form id="attach-form"><label for="attach-file">Attach or replace this paper's PDF</label><p class="muted">Choose the matching paper. Replacing a PDF clears its earlier AI responses.</p><div class="inline"><input id="attach-file" type="file" accept="application/pdf,.pdf" required><button type="submit" class="secondary">Attach PDF</button></div></form>
+        <details><summary>Review or correct metadata</summary><p id="extraction-note" class="muted"></p><form id="edit-form">
+          <label for="edit-title">Paper title</label><input id="edit-title" name="title" required maxlength="500">
+          <label for="edit-authors">Paper authors</label><input id="edit-authors" name="authors" maxlength="2000">
+          <label for="edit-year">Paper year</label><input id="edit-year" name="year" type="number" min="1000" max="2100">
+          <label for="edit-abstract">Paper abstract</label><textarea id="edit-abstract" name="abstract" rows="5" maxlength="20000"></textarea><button type="submit" class="secondary">Save metadata</button></form>
+        </details>
+        <details id="text-details"><summary>Inspect extracted pages</summary><div id="page-text"></div></details>
+        <div class="ai-panel"><h3>Understand this paper</h3><p id="ai-status" class="muted"></p><p class="muted">AI actions send this paper's extracted text and your question to OpenAI. Check the evidence against the PDF; AI can make mistakes.</p>
+          <button id="summarize" type="button">Generate summary</button>
+          <form id="question-form"><label for="question">Ask about this paper</label><textarea id="question" required minlength="3" maxlength="2000" rows="3" placeholder="What datasets are used, and how does the method compare with the baselines?"></textarea><button type="submit">Ask question</button></form>
+          <p id="ai-progress" role="status"></p>
+        </div>
+        <h3 class="history-heading">Saved summaries &amp; answers</h3><div id="analysis-history"></div>
+      </div>
+    </section>
+  </div></div>
+  <footer>Stored locally on this computer · <a href="/docs" target="_blank" rel="noopener">API documentation</a></footer>
+</main></body></html>
